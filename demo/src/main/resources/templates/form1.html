@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- 	시작하면 index가 뜸, 클릭하면 href의 주소를 요청하고
+	Controller에 주소가 있는 메서드를 찾아가서 getmapping을 실행함
+	return"메서드" 을 하면 스프링은 templates에 있는 form1.html를 찾음.(없으면 오류)
+	form 태그의 역할은 인풋을 어디로 무슨 이름으로 보낼거냐 해주는 역할
+	post 방식으로 보내기로 했음 -->
+<body>
+
+	<h2>form1.html</h2>
+	<form action="form1-param" method(param1)>
+		<input type="text" name="p1"><br>
+		<input type="text" name="p2"><br>
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>
